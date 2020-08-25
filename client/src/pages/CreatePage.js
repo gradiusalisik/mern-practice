@@ -25,6 +25,7 @@ export const CreatePage = () => {
           "POST",
           {
             from: link,
+            userId: auth.userId,
           },
           {
             Authorization: `Bearer ${auth.token}`,
